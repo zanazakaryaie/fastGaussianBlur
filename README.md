@@ -6,4 +6,4 @@ To better understand the tips, follow the codes in this order:
 2. parallel_processing (to be comming soon)
 3. simd (to be comming soon)
 
-For more details check my post [here](http://imrid.net/).
+For more details check my post [here](http://imrid.net/?p=4142).
