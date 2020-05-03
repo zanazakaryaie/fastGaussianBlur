@@ -2,7 +2,7 @@
 #include <opencv2/opencv.hpp>
 #include <chrono>
 
-#include "Matrix.h"
+#include "../Matrix.h"
 #include "Gaussian_base.hpp"
 #include "Gaussian_refinement1.hpp"
 #include "Gaussian_refinement2.hpp"
@@ -13,7 +13,7 @@ using namespace cv;
 
 int main()
 {
-    Mat img = imread("image.jpg", 0);
+    Mat img = imread("../image.jpg", 0);
     //resize(img, img, Size(), 2, 2); //Use to see the effect of image size
 
     Mat OpenCV_Output;
