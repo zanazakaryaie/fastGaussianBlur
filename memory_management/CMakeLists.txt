@@ -9,7 +9,5 @@ if(NOT OpenCV_FOUND)
     message(FATAL_ERROR "OpenCV not found.")
  endif()
 
-#HEADER_FILES(../Matrix.h Gaussian_base.hpp Gaussian_refinement1.hpp Gaussian_refinement2.hpp Gaussian_refinement3.hpp)
-
 add_executable(fastGaussianBlur main.cpp)
 target_link_libraries(${PROJECT_NAME} ${OpenCV_LIBS})
