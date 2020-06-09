@@ -81,7 +81,7 @@ private:
         }
 
         val    = (T**)malloc(m*sizeof(T*));
-        val[0] = (T*)calloc(m*n,sizeof(T));
+        val[0] = (T*)malloc(m*n*sizeof(T));
 
         for(unsigned i=1; i<m; i++)
             val[i] = val[i-1]+n;
