@@ -6,7 +6,7 @@ To better understand the tips, follow the codes in this order:
 2. simd
 3. parallel_processing
 
-![](Comparison.jpg){:height="50%" width="50%"}
+<img src="Comparison.jpg" width="400" >
 
 # How to build?
 ```
