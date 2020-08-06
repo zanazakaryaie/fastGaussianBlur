@@ -6,4 +6,16 @@ To better understand the tips, follow the codes in this order:
 2. simd
 3. parallel_processing
 
+![Screenshot](comparison.jpg)
+
+# How to build?
+```
+cd memory_management (or the other folders)
+mkdir build
+cd build
+cmake ..
+make
+./fastGaussianBlur
+```
+# Details of the implementation
 For more details read my posts on [memory management](http://imrid.net/?p=4142), [simd](http://imrid.net/?p=4173) and parallel processing.
