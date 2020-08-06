@@ -6,8 +6,6 @@ To better understand the tips, follow the codes in this order:
 2. simd
 3. parallel_processing
 
-<img src="Comparison.jpg" width="600" >
-
 # How to build?
 ```
 cd memory_management (or the other folders)
@@ -17,5 +15,8 @@ cmake ..
 make
 ./fastGaussianBlur
 ```
+# Comparison
+<img src="Comparison.jpg" width="600" >
+
 # Details of the implementation
 For more details read my posts on [memory management](http://imrid.net/?p=4142), [simd](http://imrid.net/?p=4173) and parallel processing.
