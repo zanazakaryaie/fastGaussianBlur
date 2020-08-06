@@ -6,7 +6,6 @@ To better understand the tips, follow the codes in this order:
 2. simd
 3. parallel_processing
 
-![](Comparison.jpg){:class="img-responsive"}
 ![](Comparison.jpg){:height="50%" width="50%"}
 
 # How to build?
