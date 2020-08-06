@@ -13,6 +13,7 @@ inline void GaussianBlur_row(const float *in, float *out, const unsigned int col
     out[cols-1] = (in[cols-3]+in[cols-1])*0.054488685f + (in[cols-2]+in[cols-1])*0.24420135f + in[cols-1]*0.40261996f;
 }
 
+
 void Gaussian_blur_ref3(const Matrixf &input, Matrixf &output)
 {
     //sigma is 1.0f
