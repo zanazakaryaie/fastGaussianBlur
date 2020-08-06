@@ -17,6 +17,7 @@ using namespace cv;
 int main()
 {
     Mat img = imread("../../image.jpg", 0);
+
     //resize(img, img, Size(), 2, 2); //Use to see the effect of image size
 
     Mat img_converted;
