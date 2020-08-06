@@ -6,7 +6,7 @@ To better understand the tips, follow the codes in this order:
 2. simd
 3. parallel_processing
 
-<img src="Comparison.jpg" width="800" >
+<img src="Comparison.jpg" width="600" >
 
 # How to build?
 ```
