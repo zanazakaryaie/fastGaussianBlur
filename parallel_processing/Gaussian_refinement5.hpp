@@ -36,10 +36,11 @@ void Gaussian_blur_ref5(const Matrixf &input, Matrixf &output)
         for (unsigned int j=0; j<cols; j++)
             buffer[j] = (input.val[0][j]+input.val[i+2][j])*0.054488685f + (input.val[0][j]+input.val[i+1][j])*0.24420135f + input.val[i][j]*0.40261996f;
 
-        GaussianBlur_row_tiled(buffer, output.val[i], cols);
+        GaussianBlur_row(buffer, output.val[i], cols);
     }
 
     //Middle rows
+    #pragma omp parallel for private(buffer)
     for (unsigned int i=2; i<rows-2; i++)
     {
         unsigned int j=0;
@@ -60,7 +61,7 @@ void Gaussian_blur_ref5(const Matrixf &input, Matrixf &output)
         for (; j<cols; j++)
             buffer[j] = (input.val[i-2][j]+input.val[i+2][j])*0.054488685f + (input.val[i-1][j]+input.val[i+1][j])*0.24420135f + input.val[i][j]*0.40261996f;
 
-        GaussianBlur_row_tiled(buffer, output.val[i], cols);
+        GaussianBlur_row(buffer, output.val[i], cols);
     }
 
     //Bottom rows
@@ -83,6 +84,6 @@ void Gaussian_blur_ref5(const Matrixf &input, Matrixf &output)
         for (; j<cols; j++)
             buffer[j] = (input.val[i-2][j]+input.val[rows-1][j])*0.054488685f + (input.val[i-1][j]+input.val[rows-1][j])*0.24420135f + input.val[i][j]*0.40261996f;
 
-        GaussianBlur_row_tiled(buffer, output.val[i], cols);
+        GaussianBlur_row(buffer, output.val[i], cols);
     }
 }
