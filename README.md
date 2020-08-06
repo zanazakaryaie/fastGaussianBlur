@@ -1,5 +1,5 @@
 # Fast Gaussian Blur
-Gaussian blur is one of the basic building blocks of computer vision algorithms. This repo is a step-by-step tutorial that shows how it can be accelerated on Raspberry Pi 3B+ with 32bit OS. The ideas used here can be also used for other convolution operations.
+Gaussian blur is one of the basic building blocks of computer vision algorithms. This repo is a step-by-step tutorial that shows how it can be accelerated. The ideas used here can be also used for other convolution operations.
 
 To better understand the tips, follow the codes in this order:
 1. memory_management 
@@ -16,6 +16,7 @@ make
 ./fastGaussianBlur
 ```
 # Comparison
+See the runtimes for different image sizes on Raspberry Pi 3B+ (32bitOS, GCC 6.3) 
 <img src="Comparison.jpg" width="600" >
 
 # Details of the implementation
