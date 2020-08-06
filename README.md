@@ -6,7 +6,7 @@ To better understand the tips, follow the codes in this order:
 2. simd
 3. parallel_processing
 
-![Screenshot](Comparison.jpg)
+![comparsion](Comparison.jpg&s=1000)
 
 # How to build?
 ```
