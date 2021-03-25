@@ -6,7 +6,7 @@ To better understand the tips, follow the codes in this order:
 2. simd
 3. parallel_processing
 
-# How to build?
+## How to build?
 ```
 cd memory_management (or the other folders)
 mkdir build
@@ -15,9 +15,9 @@ cmake ..
 make
 ./fastGaussianBlur
 ```
-# Comparison
+## Comparison
 See the runtimes for different image sizes on Raspberry Pi 3B+ (32bitOS, GCC 6.3) 
 <img src="Comparison.jpg" width="600" >
 
-# Details of the implementation
+## Details of the implementation
 For more details read my posts on [memory management](http://imrid.net/?p=4142), [simd](http://imrid.net/?p=4173) and [parallel processing](http://imrid.net/?p=4192).
